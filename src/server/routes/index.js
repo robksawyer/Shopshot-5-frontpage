@@ -17,11 +17,11 @@
  * See the Express application routing documentation for more information:
  * http://expressjs.com/api.html#app.VERB
  */
- 
+
 import reactModule from './react';
 import keystone from 'keystone';
 import middleware from './middleware';
-import apiRoutes from '../API/routes';
+import apiConfig from '../API/config';
 
 // Common Middleware
 keystone.pre('routes', reactModule);
@@ -29,9 +29,10 @@ keystone.pre('routes', reactModule);
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// You can use "app" here like you would in Express
-	
-	apiRoutes(app);
-	
+
+  // Load and setup the API config
+	apiConfig(app, keystone);
+
 	// Error middleware
 	app.use((error, req, res, next) => {
 		res.status(error.status).send({

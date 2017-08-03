@@ -11,8 +11,7 @@ import App from './components/App';
 
 const Routes = (
   <Router render={(props) => <ReduxAsyncConnect {...props}/>} history={browserHistory}>
-    <Route path='/' component={App}>
-    </Route>
+    <Route path='/' component={App}></Route>
   </Router>
 );
 
