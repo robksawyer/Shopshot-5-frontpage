@@ -9,7 +9,8 @@ Don't forget to change names for the ones in your project!.
 2. `npm run dev` and `npm run front:dev`.
 
 ### Configuration
-1. Set `MONGO_URI` in `config/vars.js` before running the package.
+1. Copy `.env.sample` to `.env` before running the package.
+1. Set `MONGO_URI` in `.env.sample` before running the package.
 
 ### Scripts
 
