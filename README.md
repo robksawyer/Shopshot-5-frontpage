@@ -1,8 +1,8 @@
-# Keystone-React-Redux for MERN projects.
+# Keystone-React-Redux for [MERN](http://mern.io/) projects.
 
 This package uses Webpack and Babel to run Keystone, React and Redux.
 
-Don't forget to change names for the ones in your project!.
+Don't forget to change names for the ones in your project!
 
 ### How to use:
 1. `yarn install`.
