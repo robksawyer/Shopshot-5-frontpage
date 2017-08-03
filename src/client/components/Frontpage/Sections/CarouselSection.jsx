@@ -1,14 +1,10 @@
-import React, {PropTypes, Component} from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Thumbnail, Button, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router';
 import Slider from 'react-slick';
 import {showItems} from '../../../actions';
 //import './Styles/CarouselSection.css';
-
-const propTypes = {
-    title: PropTypes.string
-};
 
 const defaultProps = {
     title: ''
@@ -67,7 +63,6 @@ class CarouselSections extends Component {
     }
 }
 
-CarouselSections.propTypes = propTypes;
 CarouselSections.defaultProps = defaultProps;
 
 function mapStateToProps(state) {

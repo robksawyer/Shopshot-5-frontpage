@@ -1,4 +1,4 @@
-import React, {PropTypes, Component} from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Thumbnail, Button, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router';
@@ -6,10 +6,6 @@ import Slider from 'react-slick';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import {showItems} from '../../../actions';
 //import './Styles/CarouselSection.css';
-
-const propTypes = {
-    title: PropTypes.string
-};
 
 const defaultProps = {
     title: 'FeaturedSection'
@@ -54,7 +50,6 @@ class FeaturedSection extends Component {
     }
 }
 
-FeaturedSection.propTypes = propTypes;
 FeaturedSection.defaultProps = defaultProps;
 
 function mapStateToProps(state) {
