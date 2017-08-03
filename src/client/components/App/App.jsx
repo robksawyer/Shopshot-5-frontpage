@@ -5,7 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {blue500, blue700, blue100} from 'material-ui/styles/colors';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import Menu from '../Menu';
+import Navigation from '../Navigation';
 import Frontpage from '../Frontpage';
 import Footer from '../Footer';
 
@@ -38,9 +38,7 @@ class App extends Component {
       return (
         <MuiThemeProvider muiTheme={muiTheme}>
           <div>
-            <div>
-              <Menu/>
-            </div>
+            <Navigation/>
             <div style={Main}>
               <Frontpage/>
             </div>
