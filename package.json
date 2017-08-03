@@ -17,7 +17,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "dotenv": "^4.0.0",
     "isomorphic-fetch": "^2.2.1",
-    "keystone": "^0.3.19",
+    "keystone": "^4.0.0-beta.5",
     "lodash": "^4.13.1",
     "material-ui": "^0.16.7",
     "newrelic": "^2.0.2",
