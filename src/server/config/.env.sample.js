@@ -1,0 +1,9 @@
+COOKIE_SECRET=https://randomkeygen.com/
+NEW_RELIC_APP_NAME='Keystone React Template'
+NEW_RELIC_LICENSE_KEY=SOME_KEY
+NEW_RELIC_LOG=stdout
+NODE_ENV=local
+USE_LIVE_DB=false
+MONGO_URI=mongodb://heroku_...
+API_VERSION=v1
+API_URL=http://0.0.0.0:3000/api
