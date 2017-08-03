@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 //import ItemsList from './ItemsList';
@@ -13,14 +13,14 @@ const mainStyle = {
   padding: 0,
 };
 
-class Frontpage extends React.Component {
+class Frontpage extends Component {
 
   constructor(props) {
     super(props);
   }
 
   render() {
-    return ( 
+    return (
       <div className="container" style={mainStyle}>
         <div>
           <CarouselSection/>
