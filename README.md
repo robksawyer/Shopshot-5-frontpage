@@ -4,6 +4,8 @@ This package uses Webpack and Babel to run Keystone, React and Redux. The projec
 
 Don't forget to change names for the ones in your project!
 
+You can find a demo of the project running on Heroku at <https://krt-back.herokuapp.com/>.
+
 ### How to use:
 1. `yarn install`.
 2. `yarn run dev` and `yarn run front:dev`.
