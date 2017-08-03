@@ -1,6 +1,6 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
-require('dotenv').config('./config');
+require('dotenv').config({ path: __dirname + '/config/.env' });
 
 // Initialise New Relic if an app name and license key exists
 if (process.env.NODE_ENV === 'production'){
@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production'){
 
 // Require keystone
 var keystone = require('keystone');
-var pkg = require('./package.json');
+var pkg = require('../../package.json');
 
 // Handle finding the right database to use.
 // Builds a database based on the name in package.json.
@@ -34,8 +34,6 @@ keystone.init({
 	'name': 'keystone-react-template',
 	'brand': 'Keystone React Template',
 
-	'mongo': config.MONGO_URI,
-
 	'sass': 'public',
 	'static': ['../../build', 'public'],
 	'favicon': 'public/favicon.ico',
@@ -53,7 +51,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': config.COOKIE_SECRET,
+	'cookie secret': process.env.COOKIE_SECRET,
 });
 
 // Load your project's Models

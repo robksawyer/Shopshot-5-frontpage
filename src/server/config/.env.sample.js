@@ -5,5 +5,6 @@ NEW_RELIC_LOG=stdout
 NODE_ENV=local
 USE_LIVE_DB=false
 MONGO_URI=mongodb://heroku_...
+MONGODB_URI=mongodb://heroku_...
 API_VERSION=v1
 API_URL=http://0.0.0.0:3000/api
