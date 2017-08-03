@@ -1,3 +1,6 @@
+// Webpack 1.0 config
+// To visit your app, navigate to http://localhost:8080.
+
 const path = require('path');
 
 module.exports = {
