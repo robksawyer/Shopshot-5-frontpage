@@ -33,9 +33,9 @@ keystone.init({
 	'name': 'keystone-react-template',
 	'brand': 'Keystone React Template',
 
-	'sass': 'public',
-	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'sass': '../client/public',
+	'static': '../client/public',
+	'favicon': '../client/public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'pug',
 

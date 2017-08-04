@@ -14,7 +14,7 @@ var footer = {
 const Footer = () => (
   <div style={footer}>
     <div className="container">
-      Copyright &copy 2017 Keystone React Template
+      Copyright &copy; 2017 Keystone React Template
     </div>
   </div>
 );

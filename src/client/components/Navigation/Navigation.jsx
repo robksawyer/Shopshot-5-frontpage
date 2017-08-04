@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import 'semantic-ui-css/dist/semantic.min.css';
 
 import { Link } from 'react-router';
 import { Container, Menu, Button, Icon, Image } from 'semantic-ui-react';
