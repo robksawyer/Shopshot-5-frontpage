@@ -9,7 +9,7 @@ module.exports = {
     app: ['./src/client/client.js']
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'src', 'server', 'public', 'js'),
     filename: 'bundle.js',
     // sourceMapFilename: 'bundle.js.map',
   },

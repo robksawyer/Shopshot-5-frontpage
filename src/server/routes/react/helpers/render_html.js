@@ -19,7 +19,7 @@ const renderHTML = (componentHTML, initialState) => {
         <script type="application/javascript">
             window.REDUX_INITIAL_STATE = ${JSON.stringify(initialState)}
           </script>
-        <script type="application/javascript" src="/bundle.js"></script>
+        <script type="application/javascript" src="/js/bundle.js"></script>
       </body>
     </html>
   `;
