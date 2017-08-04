@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Match, Router } from 'react-router';
+import { browserHistory, Match, Router } from 'react-router';
 import routes from './routes';
 import { Provider } from 'react-redux';
 import configureStore from './redux/configureStore';
@@ -11,7 +11,7 @@ const store = configureStore(initialState);
 
 const client = (
   <Provider store={store}>
-    <Router>
+    <Router history={browserHistory}>
       {routes}
     </Router>
   </Provider>

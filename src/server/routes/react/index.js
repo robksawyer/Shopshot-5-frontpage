@@ -47,7 +47,8 @@ const reactModule = (req, res, next) => {
         );
 
         // 3. render the Redux initial data into the server markup
-        const html = renderHTML(componentHTML, store.getState());
+        var pageTitle = 'Keystone React Template';
+        const html = renderHTML(pageTitle, componentHTML, store.getState());
         res.send(html);
       });
     });
