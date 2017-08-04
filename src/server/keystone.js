@@ -33,16 +33,16 @@ keystone.init({
 	'name': 'keystone-react-template',
 	'brand': 'Keystone React Template',
 
-	'sass': '../client/public',
-	'static': '../client/public',
+	// 'sass': '../client/public',
+	'static': ['../../dist','../client/public'],
 	'favicon': '../client/public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'pug',
 
 	// Handy options
 	// 'emails': 'templates/emails',
-	// 'admin path': 'admin',
-	// 'signin logo': ['/images/logo.svg', 120],
+	'admin path': 'admin',
+	'signin logo': ['../client/public/images/logo.svg', 120],
 
 	'mongo': mongoUrl,
 

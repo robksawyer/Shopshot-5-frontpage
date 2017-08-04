@@ -31,8 +31,8 @@ exports.initLocals = function (req, res, next) {
 		error: []
 	};
 	res.locals.api = {
-		clientId: process.env.APP_CLIENT_ID,
-		clientSecret: process.env.APP_CLIENT_SECRET
+		clientId: process.env.API_CLIENT_ID,
+		clientSecret: process.env.API_CLIENT_SECRET
 	};
 	next();
 };

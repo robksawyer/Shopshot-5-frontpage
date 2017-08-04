@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "7"
+install:
+    - yarn add -g codecov
+    - "yarn install"
+script:
+    - "yarn run db & yarn run test"
+after_script:
+    - codecov

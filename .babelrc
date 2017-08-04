@@ -1,10 +1,35 @@
 {
-  "presets": ["es2015", "react", "stage-1"],
   "plugins": [
-    "transform-decorators-legacy",
-    "transform-react-remove-prop-types",
-    "transform-react-inline-elements",
-    "transform-react-constant-elements",
-    "transform-react-jsx"
-  ]
+    "lodash",
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ],
+    "react-hot-loader/babel",
+    "transform-react-jsx-img-import",
+    "syntax-dynamic-import"
+  ],
+  "presets": ["es2015", "react", "stage-0"],
+  "env": {
+    "ssr": {
+      "plugins": [
+        [
+          "babel-plugin-webpack-alias",
+          {
+            "config": "./config/webpack.base.js",
+            "findConfig": true
+          }
+        ],
+        "dynamic-import-node"
+      ]
+    },
+    "production": {
+      "presets": ["react-optimize"]
+    }
+  }
 }
