@@ -11,17 +11,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    sourceMapFilename: 'bundle.js.map',
+    // sourceMapFilename: 'bundle.js.map',
   },
-  // externals: {
-  //   jquery: 'jQuery',
-  //   lodash: '_',
-  // },
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  // devtool: 'source-map',
-  // cache: true,
   module: {
     rules: [
       {
@@ -56,6 +50,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  // plugins: [ ]
+  }
 };
