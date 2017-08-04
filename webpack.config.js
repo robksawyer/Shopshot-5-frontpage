@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'src', 'server', 'public', 'js'),
     filename: 'bundle.js',
-    // sourceMapFilename: 'bundle.js.map',
+    sourceMapFilename: 'bundle.js.map',
   },
   resolve: {
     extensions: ['.js', '.jsx']

@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 // import 'semantic-ui-css/dist/semantic.min.css';
 
-import { Link } from 'react-router-dom';
-import {
-  Container, Menu, Button, Icon, Image
-} from 'semantic-ui-react';
+import { Link } from 'react-router';
+import { Container, Menu, Button, Icon, Image } from 'semantic-ui-react';
 
 const style = {
   h1: {

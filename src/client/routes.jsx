@@ -1,14 +1,12 @@
 import React from 'react';
-import { Router, Match } from 'react-router';
+import { Router, Match, Route, browserHistory } from 'react-router';
 import { ReduxAsyncConnect } from 'redux-connect';
 import App from './components/App';
 
 
 const Routes = (
-  <Router render={(props) => <ReduxAsyncConnect {...props}/>}>
-    <div>
-      <Match path='/' component={App}></Match>
-    </div>
+  <Router render={(props) => <ReduxAsyncConnect {...props}/>} history={browserHistory}>
+    <Route path='/' component={App}></Route>
   </Router>
 );
 
